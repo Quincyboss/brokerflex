@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.5.3/flowbite.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="relative container mx-auto p-6 h-24 bg-gradient-to-l from-blue-500 to-red-500"
+    >
+      <!--flex contanier for all items-->
+      <div class="flex item-center justify-between">
+        <!--flex container for the logo & menu-->
+        <div class="flex items-center space-x-20">
+          <!--logo-->
+          <img src="../images/q1.png" alt="" class="h-30 w-20" />
+          <!--left menu-->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="index.html" class="text-blue-500 hover:text-blue-500"
+              >HOME</a
+            >
+            <a href="PACK.html" class="text-blue-500 hover:text-blue-500"
+              >PACKAGES</a
+            >
+            <a href="" class="text-blue-500 hover:text-blue-500">CONTACT </a>
+            <a href="" class="text-blue-500 hover:text-blue-500">ABOUT US </a>
+          </div>
+        </div>
+        <!--right buttons icon -->
+        <div class="hidden items-center space-x-6 font-bold lg:flex">
+          <div
+            class="text-white font-bold hover:text-blue-200 rounded-full hover:opacity-80"
+          >
+            <a href="loging.html"> login</a>
+          </div>
+          <a
+            href="register.html
+        "
+            class="px-8 py-3 font-bold text-white bg-blue-500 rounded-full hover:opacity-70"
+            >sign up</a
+          >
+        </div>
+        <!--@todo harmburger menu-->
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="open z-40 block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!--@todo mobile menu-->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-violet-500 left-6 right-6 top-20 z-100"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        >
+          <a href="" class="w-full text-center">HOME</a>
+          <a href="" class="w-full text-center">PACKAGES</a>
+          <a href="#" class="w-full text-center">CONTACT</a>
+          <a href="#" class="w-full text-center">ABOUT</a>
+
+          <a href="#" class="w-fullpt-6 border-t border-gray-500 text-center"
+            >login</a
+          >
+          <a href="#" class="w-full py-3 text-center rounded-full bg-blue-300"
+            >sign up</a
+          >
+        </div>
+      </div>
+    </nav>
+    <section class="bg-black flex items-center justify-center min-h-screen">
+      <div class="w-full max-w-sm bg-white p-8 rounded-lg shadow-md">
+        <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+          Login to Your Account
+        </h2>
+        <form id="loggingform">
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-semibold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="remember"
+                name="remember"
+                class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300 rounded"
+              />
+              <label for="remember" class="ml-2 block text-gray-900"
+                >Remember me</label
+              >
+            </div>
+            <div>
+              <a href="#" class="text-sm text-blue-600 hover:underline"
+                >Forgot password?</a
+              >
+            </div>
+          </div>
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+        <div class="mt-6 text-center">
+          <p class="text-sm text-gray-600">
+            Don't have an account?
+            <a href="register.html" class="text-blue-600 hover:underline"
+              >Register</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

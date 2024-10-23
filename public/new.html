@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="short icon " type="image/png" href="../images/q1.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black">
+    <div class="flex items-center justify-center h-screen">
+      <div class="bg-gray-100 p-8 rounded-lg shadow-lg text-center">
+        <div id="number" class="text-4xl mb-4">1</div>
+        <div class="flex justify-center space-x-4">
+          <button
+            id="decrease"
+            class="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600"
+          >
+            Decrease
+          </button>
+          <button
+            id="increase"
+            class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+          >
+            Increase
+          </button>
+          <button
+            id="reset"
+            class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600"
+          >
+            reset
+          </button>
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        //select element
+        const counterValue = document.getElementById("number");
+        const increase = document.getElementById("increase");
+        const decrease = document.getElementById("decrease");
+        const reset = document.getElementById("reset");
+        //globa; value
+        let count = 0;
+        // add events to thr buttuns
+        increase.addEventListener("click", () => {
+          count++;
+          //update the count val
+          updatecounterval();
+        });
+        //decrease
+        decrease.addEventListener("click", () => {
+          count--;
+          //update the count val
+          updatecounterval();
+        });
+        reset.addEventListener("click", () => {
+          count = 0;
+          //update the count val
+          updatecounterval();
+        });
+
+        //update counter function
+        function updatecounterval() {
+          counterValue.textContent = count;
+        }
+      });
+    </script>
+  </body>
+</html>

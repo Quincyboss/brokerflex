@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="short icon " type="image/png" href="../images/q1.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--nav bar-->
+    <nav
+      id="registerForm"
+      class="relative container mx-auto p-6 h-24 bg-gradient-to-l from-blue-500 to-red-500"
+    >
+      i
+      <div class="flex item-center justify-between">
+        <!--flex container for the logo & menu-->
+        <div class="flex items-center space-x-20">
+          <!--logo-->
+          <img src="../images/q1.png" alt="" class="h-30 w-20" />
+          <!--left menu-->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="index.html" class="text-blue-400 hover:text-black">HOME</a>
+            <a href="PACK.html" class="text-blue-500 hover:text-black"
+              >PACKAGES</a
+            >
+            <a href="" class="text-blue-500 hover:text-black">CONTACT </a>
+            <a href="" class="text-blue-500 hover:text-black">ABOUT US </a>
+          </div>
+        </div>
+        <!--right buttons icon -->
+        <div
+          class="hidden items-center space-x-6 font-bold text-gray-400 lg:flex"
+        >
+          <div class="hover:text-gray-300"><a href="loging.html">login</a></div>
+          <a
+            href="register.html"
+            class="px-8 py-3 font-bold text-white bg-blue-500 rounded-full hover:opacity-70"
+            >sign up</a
+          >
+        </div>
+        <!--@todo harmburger menu-->
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="open z-40 block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
+    <!--register-->
+    <section class="bg-blue-500 flex items-center justify-center min-h-screen">
+      <div
+        class="w-full max-w-md bg-white p-8 rounded-lg shadow-md mt-10 mb-10"
+      >
+        <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">
+          Register
+        </h2>
+        <form>
+          <div class="mb-4">
+            <label for="name" class="block text-gray-700 font-semibold mb-2"
+              >First Name</label
+            >
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="surname" class="block text-gray-700 font-semibold mb-2"
+              >Surname</label
+            >
+            <input
+              type="text"
+              id="surname"
+              name="surname"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-gray-700 font-semibold mb-2"
+              >Email</label
+            >
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="country" class="block text-gray-700 font-semibold mb-2"
+              >Country</label
+            >
+            <input
+              type="text"
+              id="country"
+              name="country"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+              list="country-list"
+            />
+            <datalist id="country-list">
+              <option value="United States"></option>
+              <option value="Canada"></option>
+              <option value="United Kingdom"></option>
+              <option value="Australia"></option>
+              <option value="Nigeria"></option>
+              <option value="South Africa"></option>
+              <option value="India"></option>
+            </datalist>
+          </div>
+          <div class="mb-6">
+            <label for="phone" class="block text-gray-700 font-semibold mb-2"
+              >Phone Number</label
+            >
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="mb-4">
+            <label for="password" class="block text-gray-700 font-semibold mb-2"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="confirm-password"
+              class="block text-gray-700 font-semibold mb-2"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+          </div>
+
+          <div>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Dashboard Layout -->
+    <div class="min-h-screen flex">
+      <!-- Sidebar -->
+      <aside class="w-64 bg-gray-800 text-white flex-shrink-0">
+        <div class="p-4">
+          <h2 class="text-xl font-semibold">Dashboard</h2>
+          <nav class="mt-8">
+            <a
+              href="#"
+              class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >
+              <svg
+                class="h-6 w-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              Overview
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >
+              <svg
+                class="h-6 w-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              Analytics
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >
+              <svg
+                class="h-6 w-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h18M9 9v12M15 9v12M9 9h6"
+                ></path>
+              </svg>
+              Transactions
+            </a>
+            <a
+              href="#"
+              class="flex items-center px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white"
+            >
+              <svg
+                class="h-6 w-6 mr-2"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+              Settings
+            </a>
+          </nav>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <div class="flex-1 bg-gray-100">
+        <!-- Top Bar -->
+        <header class="bg-white shadow-sm py-4 px-6">
+          <div class="flex justify-between items-center">
+            <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+            <div class="flex items-center space-x-4">
+              <button
+                class="text-gray-600 hover:text-gray-800 focus:outline-none"
+              >
+                <svg
+                  class="h-6 w-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16"
+                  ></path>
+                </svg>
+              </button>
+              <img
+                class="h-8 w-8 rounded-full"
+                src="https://via.placeholder.com/40"
+                alt="User Avatar"
+              />
+            </div>
+          </div>
+        </header>
+
+        <!-- Dashboard Content -->
+        <main class="p-6">
+          <!-- Stats Cards -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6"
+          >
+            <div class="bg-white p-4 rounded-lg shadow">
+              <div class="text-gray-500">Total Sales</div>
+              <div class="text-2xl font-semibold">$15,000</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <div class="text-gray-500">New Users</div>
+              <div class="text-2xl font-semibold">120</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <div class="text-gray-500">Active Subscriptions</div>
+              <div class="text-2xl font-semibold">350</div>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <div class="text-gray-500">Support Tickets</div>
+              <div class="text-2xl font-semibold">23</div>
+            </div>
+          </div>
+
+          <!-- Charts and Tables -->
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            <!-- Chart Card -->
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-xl font-semibold mb-4">Sales Analytics</h3>
+              <!-- Placeholder for Chart -->
+              <div
+                class="h-64 bg-gray-200 rounded-lg flex items-center justify-center"
+              >
+                <span class="text-gray-500">Chart goes here</span>
+              </div>
+            </div>
+
+            <!-- Table Card -->
+            <div class="bg-white p-6 rounded-lg shadow">
+              <h3 class="text-xl font-semibold mb-4">Recent Transactions</h3>
+              <table class="min-w-full bg-white">
+                <thead>
+                  <tr>
+                    <th class="py-2 text-left text-gray-600">Date</th>
+                    <th class="py-2 text-left text-gray-600">Customer</th>
+                    <th class="py-2 text-left text-gray-600">Amount</th>
+                    <th class="py-2 text-left text-gray-600">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="py-2">2024-08-22</td>
+                    <td class="py-2">John Doe</td>
+                    <td class="py-2">$150</td>
+                    <td class="py-2 text-green-600">Completed</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2">2024-08-21</td>
+                    <td class="py-2">Jane Smith</td>
+                    <td class="py-2">$200</td>
+                    <td class="py-2 text-red-600">Failed</td>
+                  </tr>
+                  <tr>
+                    <td class="py-2">2024-08-20</td>
+                    <td class="py-2">Mark Brown</td>
+                    <td class="py-2">$320</td>
+                    <td class="py-2 text-yellow-600">Pending</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

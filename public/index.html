@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="short icon " type="image/png" href="../images/q1.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--nav container-->
+
+    <nav
+      class="relative mx-auto p-6 h-24 bg-gradient-to-l from-blue-500 to-red-500 z-50"
+    >
+      <!--flex contanier for all items-->
+      <div class="flex item-center justify-between">
+        <!--flex container for the logo & menu-->
+        <div class="flex items-center space-x-20">
+          <!--logo-->
+          <img src="../images/q1.png" alt="" class="h-30 w-20" />
+
+          <!--left menu-->
+          <div class="hidden space-x-8 font-bold lg:flex">
+            <a href="index.html" class="text-blue-500 hover:text-blue-500"
+              >HOME</a
+            >
+            <a href="PACK.html" class="text-blue-500 hover:text-blue-500"
+              >PACKAGES</a
+            >
+            <a href="" class="text-blue-500 hover:text-blue-500">CONTACT </a>
+            <a href="" class="text-blue-500 hover:text-blue-500">ABOUT US </a>
+          </div>
+        </div>
+        <!--right buttons icon -->
+        <div class="hidden items-center space-x-6 font-bold lg:flex">
+          <div
+            class="text-white font-bold hover:text-blue-200 rounded-full hover:opacity-80"
+          >
+            <a href="loging.html" class="text-white">login</a>
+          </div>
+          <a
+            href="register.html
+          "
+            class="px-8 py-3 font-bold text-white bg-blue-500 rounded-full hover:opacity-70"
+            >sign up</a
+          >
+        </div>
+        <!--@todo harmburger menu-->
+
+        <button
+          id="menu-btn"
+          type="button"
+          class="open z-40 block hamburger lg:hidden focus:outline-none"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!--@todo mobile menu-->
+      <div
+        id="menu"
+        class="absolute hidden p-6 rounded-lg bg-violet-500 left-6 right-6 top-20 z-100"
+      >
+        <div
+          class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm"
+        >
+          <a href="" class="w-full text-center">HOME</a>
+          <a href="" class="w-full text-center">PACKAGES</a>
+          <a href="#" class="w-full text-center">CONTACT</a>
+          <a href="#" class="w-full text-center">ABOUT</a>
+
+          <a
+            href="loging.html"
+            class="w-fullpt-6 border-t border-gray-500 text-center"
+            >login</a
+          >
+          <a
+            href="register.html"
+            class="w-full py-3 text-center rounded-full bg-blue-300"
+            >sign up</a
+          >
+        </div>
+      </div>
+    </nav>
+    <!--hero-->
+
+    <!--hero section-->
+    <section id="" class="">
+      <div class="flex flex-col-reverse mx-auto p-6 lg:flex-row">
+        <!--content container-->
+        <div class="flex flex-col space-y-10 md-44 lg:mt-16 lg:w-1/2 xl:md-52">
+          <h1
+            class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left text-blue-400 uppercase"
+          >
+            your financial success is our goal
+          </h1>
+          <p
+            class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
+          >
+            Trade with confidence in an industry-leading, professional, and
+            reliable company. Unlock essential features for an exceptional
+            trading experience. Experience lightning-fast returns and unmatched
+            security for your investments.
+          </p>
+          <div class="mx-auto lg:mx-0">
+            <a
+              href="register.html"
+              class="py-5 px-10 text-2xl font-bold bg-blue-500 rounded-full lg:py-4 hover:opacity-70 z-top"
+              >REGISTER</a
+            >
+          </div>
+        </div>
+        <!--images-->
+        <div class="mb-24 mx-auto md:w-180 lg:mb-0 lg:w-1/2">
+          <img
+            src="../images/Premium Photo _ Bitcoin background BTC cryptocurrency bitcoin coin blockchain wallpaper.jpeg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!--stat section-->
+    <section id="stat" class="py-24 bg-green-600">
+      <div class="container mx-auto px-3">
+        <h2 class="text-4xl mb-6 font-bold text-center uppercase">
+          How cryptoHub works
+        </h2>
+        <p class="max-w-xs mx-auto text-center text-black md:max-w-md">
+          Get involved in our tremendous platform and Invest. We will utilize
+          your money and give you profit in your wallet automatically.
+        </p>
+      </div>
+    </section>
+    <!--feature box secotion-->
+
+    <section id="services" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-gray-800">Our Services</h2>
+          <p class="text-gray-600">
+            Get started with our simple and effective services.
+          </p>
+        </div>
+
+        <!-- Cards container -->
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- Create Account Card -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition"
+          >
+            <div class="flex items-center justify-center mb-4">
+              <div class="w-16 h-16 p-4 rounded-full bg-blue-500">
+                <img
+                  src="../images/q1.png"
+                  alt="Create Account"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800">
+              Create Account
+            </h3>
+            <p class="text-gray-600 text-center mt-2">
+              Start your journey by creating an account with us. It’s quick and
+              easy!
+            </p>
+          </div>
+
+          <!-- Plan Card -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition"
+          >
+            <div class="flex items-center justify-center mb-4">
+              <div class="w-16 h-16 p-4 rounded-full bg-green-500">
+                <img
+                  src="../images/plan_icon.png"
+                  alt="Plan"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800">Plan</h3>
+            <p class="text-gray-600 text-center mt-2">
+              Choose a plan that suits your needs and start planning for
+              success.
+            </p>
+          </div>
+
+          <!-- Profit Card -->
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg hover:shadow-2xl transition"
+          >
+            <div class="flex items-center justify-center mb-4">
+              <div class="w-16 h-16 p-4 rounded-full bg-red-500">
+                <img
+                  src="../images/profit_icon.png"
+                  alt="Profit"
+                  class="w-full h-full object-contain"
+                />
+              </div>
+            </div>
+            <h3 class="text-xl font-bold text-center text-gray-800">Profit</h3>
+            <p class="text-gray-600 text-center mt-2">
+              Maximize your earnings with our profit-boosting strategies.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--frequently asked  questions-->
+    <section id="shorten" class="relative bg-black py-12">
+      <!--frequently container-->
+
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-8 text-white">
+          Frequently Asked Questions
+        </h2>
+
+        <div class="space-y-4">
+          <!-- Question 1 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:bg-blue-600">
+            <button
+              class="w-full text-left text-xl font-semibold text-gray-800 flex justify-between items-center focus:outline-none"
+            >
+              <span>What is the minimum investment amount?</span>
+              <svg
+                class="w-6 h-6 transform transition-transform duration-200"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 10a1 1 0 011.707-.707l4 4a1 1 0 01-1.414 1.414l-4-4A1 1 0 015 10z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="mt-4 hidden">
+              <p class="text-gray-600">
+                The minimum investment amount is $500. You can start with this
+                amount and grow your portfolio over time.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:bg-blue-600">
+            <button
+              class="w-full text-left text-xl font-semibold text-gray-800 flex justify-between items-center focus:outline-none"
+            >
+              <span>How can I withdraw my funds?</span>
+              <svg
+                class="w-6 h-6 transform transition-transform duration-200"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 10a1 1 0 011.707-.707l4 4a1 1 0 01-1.414 1.414l-4-4A1 1 0 015 10z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="mt-4 hidden">
+              <p class="text-gray-600">
+                You can withdraw your funds anytime by logging into your account
+                and selecting the withdrawal option from your dashboard.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:bg-blue-600">
+            <button
+              class="w-full text-left text-xl font-semibold text-gray-800 flex justify-between items-center focus:outline-none"
+            >
+              <span>What types of investments do you offer?</span>
+              <svg
+                class="w-6 h-6 transform transition-transform duration-200"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 10a1 1 0 011.707-.707l4 4a1 1 0 01-1.414 1.414l-4-4A1 1 0 015 10z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="mt-4 hidden">
+              <p class="text-gray-600">
+                We offer a variety of investment options, including stocks,
+                bonds, mutual funds, and real estate.
+              </p>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="bg-white rounded-lg shadow-lg p-6 hover:bg-blue-600">
+            <button
+              class="w-full text-left text-xl font-semibold text-gray-800 flex justify-between items-center focus:outline-none"
+            >
+              <span>How do I contact customer support?</span>
+              <svg
+                class="w-6 h-6 transform transition-transform duration-200"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5 10a1 1 0 011.707-.707l4 4a1 1 0 01-1.414 1.414l-4-4A1 1 0 015 10z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+            <div class="mt-4 hidden">
+              <p class="text-gray-600">
+                You can contact our customer support team via email, phone, or
+                live chat on our website.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--why join us 1-->
+
+    <section id="message" class="p-6 bg-black md:flex-col">
+      <h2 class="text-4xl mb-14 font-bold text-center uppercase text-white">
+        why choose us
+      </h2>
+
+      <!--container 1-->
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6 mx-auto"
+      >
+        <!--box 1-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left"
+          >
+            Legal Company
+          </h5>
+          Our company conducts absolutely legal activities in the legal field.
+          We are certified to operate investment business, we are legal and
+          safe.
+        </div>
+        <!--box 2-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-xl font-bold text-center mb-5 capitalize md:text-left"
+          >
+            High Reliability
+          </h5>
+          We are trusted by a huge number of people. We are working hard
+          constantly to improve the level of our security system and minimize
+          possible risks.
+        </div>
+        <!--box 3-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-xl font-bold text-center mb-5 capitalize md:text-left"
+          >
+            Anonymity
+          </h5>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sequi
+          tenetur voluptate delectus illum explicabo, beatae possimus id placeat
+          facere sunt rerum quod obcaecati debitis iusto totam laborum veniam
+          fugiat.
+        </div>
+      </div>
+
+      <!--container 2-->
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6 mx-auto mt-5"
+      >
+        <!--box 1-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-2xl font-bold text-center capitalize md:text-left mb-5"
+          >
+            Quick Withdrawal
+          </h5>
+          Our all retreats are treated spontaneously once requested. There are
+          high maximum limits. The minimum withdrawal amount is only $10.
+        </div>
+        <!--box 2-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left mb-5"
+          >
+            Referral Program
+          </h5>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sequi
+          tenetur voluptate delectus illum explicabo, beatae possimus id placeat
+          facere sunt rerum quod obcaecati debitis iusto totam laborum veniam
+          fugiat.
+        </div>
+        <!--box 3-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-xl font-bold text-center capitalize md:text-left mb-5"
+          >
+            24/7 Support
+          </h5>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sequi
+          tenetur voluptate delectus illum explicabo, beatae possimus id placeat
+          facere sunt rerum quod obcaecati debitis iusto totam laborum veniam
+          fugiat.
+        </div>
+      </div>
+
+      <!--container 3-->
+      <div
+        class="flex flex-col md:flex-row justify-center space-y-6 md:space-y-0 md:space-x-6 mx-auto mt-5"
+      >
+        <!--box 1-->
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-2xl font-bold text-center capitalize md:text-left mb-5"
+          >
+            Dedicated Server
+          </h5>
+          We are using a dedicated server for the website which allows us
+          exclusive use of the resources of the entire server.
+        </div>
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-2xl font-bold text-center capitalize md:text-left mb-5"
+          >
+            SSL Secured
+          </h5>
+          Comodo Essential-SSL Security encryption confirms that the presented
+          content is genuine and legitimate.
+        </div>
+        <div
+          class="w-96 p-6 shadow-lg bg-white rounded-lg hover:bg-blue-700 transition-colors duration-300"
+        >
+          <!-- SVG and content here -->
+          <h5
+            class="pt-6 text-2xl font-bold text-center capitalize md:text-left mb-5"
+          >
+            DDOS Protection
+          </h5>
+          We are using one of the most experienced, professional, and trusted
+          DDoS Protection and mitigation provider.
+        </div>
+      </div>
+    </section>
+
+    <section id="car" class="bg-black justify-between">
+      <div
+        class="container flex flex-col-reverse lg:flex-row mx-auto p-6 bg-black"
+      >
+        <!-- Video container -->
+        <div class="mb-20 lg:mb-0 lg:w-1/2 lg:flex lg:justify-center">
+          <video
+            src="../video/family 222.mp4"
+            autoplay
+            loop
+            muted
+            class="w-full max-w-md lg:max-w-none"
+          ></video>
+        </div>
+        <!-- Content container -->
+        <div
+          class="flex flex-col space-y-10 lg:space-y-6 lg:mt-32 lg:w-1/2 lg:pl-20 lg:ml-auto"
+        >
+          <h1
+            class="text-5xl font-bold text-center lg:text-6xl lg:max-w-md lg:text-left text-blue-400 uppercase"
+          >
+            Stable platform. Secure and Approved. Invest for the future.
+          </h1>
+          <p
+            class="text-2xl text-center text-gray-400 lg:max-w-md lg:text-left"
+          >
+            we love your our customers !
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--CTA section-->
+    <section id="cta" class="py-24 bg-cover bg-center bg-no-repeat">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="container mx-auto px-6 py-16 relative z-10">
+        <h2 class="text-4xl font-bold text-white text-center mb-6">About Us</h2>
+        <p class="text-lg text-white text-center max-w-2xl mx-auto mb-8">
+          Our company is dedicated to providing top-notch investment
+          opportunities for all our clients. With a team of experienced
+          professionals, we ensure that your investments are safe, legal, and
+          profitable.
+        </p>
+
+        <!-- Company Values -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 text-white text-center"
+        >
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Integrity</h3>
+            <p>
+              We adhere to the highest standards of integrity and transparency
+              in all our dealings.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Innovation</h3>
+            <p>
+              We continuously innovate to provide you with the best investment
+              solutions.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-2xl font-semibold mb-2">Customer Focus</h3>
+            <p>
+              Your satisfaction is our top priority. We tailor our services to
+              meet your needs.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+      </div>
+    </section>
+    <!--footer-->
+    <footer
+      class="w-full h-64 bg-gradient-to-l from-blue-500 to-red-500 flex items-center justify-center p-6"
+    >
+      <div
+        class="container flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start"
+      >
+        <!--logo-->
+        <img src="../images/q1.png" alt="" class="h-20 w-30" />
+        <!--menus container-->
+        <div
+          class="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0"
+        >
+          <!--first menu-->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="md-5 font-bold text-white capitalize">fetures</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >link shorten</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >branded link</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >analytics</a
+              >
+            </div>
+          </div>
+          <!----2 menu-->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="md-5 font-bold text-white capitalize">resoures</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >blog</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >developers</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >support</a
+              >
+            </div>
+          </div>
+          <!--3 menu-->
+          <div class="flex flex-col items-center w-full md:items-start">
+            <div class="md-5 font-bold text-white capitalize">company</div>
+            <div class="flex flex-col items-center space-y-3 md:items-start">
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >about</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >our team</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >carrers</a
+              >
+              <a href="#" class="capitalize text-gray-300 hover:text-blue-300"
+                >contact</a
+              >
+            </div>
+          </div>
+        </div>
+        <!--social container-->
+        <div class="flex space-x-6">
+          <a href="#">
+            <img src="../images/facebook logo.png" alt="" class="ficon w-20" />
+          </a>
+          <a href="#">
+            <img src="../images/x -twittwer.png" alt="" class="ficon w-20" />
+          </a>
+          <a href="#">
+            <img src="../images/instargram.png" alt="" class="ficon w-20" />
+          </a>
+          <a href="#">
+            <img src="../images/x -twittwer.png" alt="" class="ficon w-20" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
